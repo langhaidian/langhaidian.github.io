@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>geoscen server基础部署-centos 7.6 - langhaidian</title><meta name="Description" content="geoscen server基础部署"><meta property="og:title" content="geoscen server基础部署-centos 7.6" />
+<meta property="og:description" content="geoscen server基础部署" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/linux/geoscenserver2.0%E5%9F%BA%E7%A1%80%E9%83%A8%E7%BD%B2/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-05-25T11:04:49+08:00" />
+<meta property="article:modified_time" content="2022-05-25T11:04:49+08:00" /><meta property="og:site_name" content="My cool site" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content="geoscen server基础部署-centos 7.6"/>
+<meta name="twitter:description" content="geoscen server基础部署"/>
+<meta name="application-name" content="loveit">
+<meta name="apple-mobile-web-app-title" content="loveit"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/img/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/posts/linux/geoscenserver2.0%E5%9F%BA%E7%A1%80%E9%83%A8%E7%BD%B2/" /><link rel="prev" href="http://example.org/posts/linux/debian11/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "geoscen server基础部署-centos 7.6",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/posts\/linux\/geoscenserver2.0%E5%9F%BA%E7%A1%80%E9%83%A8%E7%BD%B2\/"
+        },"genre": "posts","keywords": "geoscen server","wordcount":  1535 ,
+        "url": "http:\/\/example.org\/posts\/linux\/geoscenserver2.0%E5%9F%BA%E7%A1%80%E9%83%A8%E7%BD%B2\/","datePublished": "2022-05-25T11:04:49+08:00","dateModified": "2022-05-25T11:04:49+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "langhaidian"
+            },"description": "geoscen server基础部署"
+    }
+    </script></head>
+    <body data-header-desktop="normal" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="langhaidian"><span class="header-title-pre">📺</span><span class="header-title-post"> >_ </span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="langhaidian"><span class="header-title-pre">📺</span><span class="header-title-post"> >_ </span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">geoscen server基础部署-centos 7.6</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://langhaidian.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>langhaidian</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/linux/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>linux</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-05-25">2022-05-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1535 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 4 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#1-准备工作">1. 准备工作</a></li>
+                <li><a href="#2-安装配置">2. 安装配置</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#复制安装文件到-etcsystemdsystem下">复制安装文件到 /etc/systemd/system下</a></li>
+    <li><a href="#修改权限-600">修改权限 600</a></li>
+    <li><a href="#创建软连接">创建软连接</a></li>
+    <li><a href="#复制安装文件到-etcsystemdsystem下-1">复制安装文件到 /etc/systemd/system下</a></li>
+    <li><a href="#修改权限-600-1">修改权限 600</a></li>
+    <li><a href="#创建软连接-1">创建软连接</a></li>
+    <li><a href="#停止服务">停止服务</a></li>
+    <li><a href="#启动服务">启动服务</a></li>
+    <li><a href="#状态查看">状态查看</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h4 id="1-准备工作">1. 准备工作</h4>
+<p>1.1 关闭防火墙</p>
+<pre><code>停止防火墙：systemctl stop firewalld.service
+禁用防火墙的开机启动：systemctl disable firewalld.service
+查看防火墙状态：systemctl status firewalld.service
+</code></pre>
+<p>1.2 用户和组创建</p>
+<pre><code># groupadd xcy
+# useradd -g xcy -m geoscene   //绑定用户和用户组
+# passwd geoscene    //设置密码geoscene
+</code></pre>
+<p>1.3 修改计算机名：</p>
+<pre><code># hostname  //查看计算机名
+# vi /etc/hostname
+编辑机器名为xcytest后保存退出
+
+# vi /etc/sysconfig/network
+文件中的hostname修改为xcytest
+</code></pre>
+<p>1.4 修改hosts文件</p>
+<pre><code># vi /etc/hosts
+192.168.0.130 xcytest.portal.com xcytest  //增加配置信息
+</code></pre>
+<p>1.5 检查主机名是否生效</p>
+<pre><code># hostname xcytest   //让修改立即生效
+# hostname -f  //查看完全限定域名
+  xcytest.portal.com
+</code></pre>
+<p>1.6 检查磁盘大小情况</p>
+<pre><code>df -h
+确保/home/径路下存储空间满足要求
+</code></pre>
+<p>1.7 准备安装包
+安装包：geoscene_datastore、geoscene_portal、geoscne_server、geoscene_webadapter_java
+将安装包上传到/home/geoscen/azb</p>
+<pre><code>解压安装包： tar -zxvf 包名称
+</code></pre>
+<p>1.8 赋予权限</p>
+<pre><code>mv geoscene_datastore_20220130 geoscenedatastore  //修改软件名称
+......       //修改软件名称，每个都需要修改，非必需
+
+
+chown -R geoscene:xcy geoscenserver  //绑定用户
+chown -R 755 geoscenserver     //给予权限，每个安装包都要执行
+</code></pre>
+<h4 id="2-安装配置">2. 安装配置</h4>
+<p>2.1 安装前准备</p>
+<pre><code>修改文件打开数配置
+# vi /etc/security/limits.conf //添加如下内容
+geoscene soft nofile 65535
+geoscene hard nofile 65535
+geoscene soft nproc 65535
+geoscene hard nporc 65535
+
+# ulimit -Hn -Hu  //使修改生效
+# ulimit -Sn -Su  //使修改生效
+</code></pre>
+<p>2.2 诊断当前环境是否满足安装要求</p>
+<pre><code># su geoscene //切换到geoscene账户下
+# ./geosceneserver/setup_resources/serverdiag/serverdiag
+........
+........   
+//根据提示检查是否有问题进行修改
+</code></pre>
+<p>2.3 安装geoscene server</p>
+<pre><code>A：
+利用console模式进行交互安装
+# cd geosceneserver
+# ./Setup -m console
+按照提示进行选择，以及配置授权文件。记录网站登录地址。
+
+B：
+创建server站点
+复制2.3安装完成后的地址：
+1. 创建站点
+2. 设置管理员账户的用户名和密码（siteadmin、geoscene、geoscene）
+3. 设置根服务器目录和配置存储位置(此两个目录用户有足够的权限及存储空间要大，可以推荐/home路径)
+4. 点击完成，直至安装成功。记录账户密码
+</code></pre>
+<p>2.4 安装和配置geoscene datastore</p>
+<pre><code>A:
+设置vm.swappiness和vm.max_map_count，转至root账户下，设置值以满足时空大数据分析需要
+# sysctl -w vm.map_count=262144
+# sysctl -w vm.swappiness=1
+
+B:
+诊断当前环境是否满足datastore安装要求
+# su - geoscene
+# ./geoscenedatastore/setup-resource/datastorediag/datastorediag
+按照提示确认环境是否满足，有问题进行修正，再次检查
+
+C:
+利用silent模型进行安装
+# cd geoscenedatastore
+# ./Setup =m silent
+记录安装之后的安装路径及地址信息
+
+D:
+登录上步安装之后登录地址，开始配置geoscene
+1. 主站点地址、账户、密码（6443主网站、siteadmin、geoscene、geoscene）
+2. 设置内容目录位置
+
+E:
+配置数据类型、按照硬件环境进行选择，如果正式服务器三个全选，虚拟机建议时空可以不选
+记录配置信息，点击完成安装
+</code></pre>
+<p>2.5 安装和配置portal for geoscene</p>
+<pre><code>A:
+安装包文件，转至root账户下：
+# yum install dos2unix
+
+B:
+安装portal
+# ./Setup -m console
+记录安装之后的地址
+
+C:
+登录上步安装之后地址信息
+1. 创建新门户
+2. 选择准备好的portal授权文件(json文件)
+3. 设置初始管理员账户（portaladmin、geoscene、geoscene、Creator、其他信息）
+4. 配置站点内容目录（/home/geoscene/portal/usr/arcgisportal/content）
+5. 确认站点信息、点击完成
+</code></pre>
+<p>2.6 安装和配置web adapter</p>
+<pre><code>准备jdk-1.8、tomcat-8、linux下安装包
+</code></pre>
+<p>1、geoscene server 自启动[注意路径安装目录]</p>
+<h1 id="复制安装文件到-etcsystemdsystem下">复制安装文件到 /etc/systemd/system下</h1>
+<p>cp /home/geoscene/geoscene/server/framework/etc/scripts/geosceneserver.service  /etc/systemd/system</p>
+<h1 id="修改权限-600">修改权限 600</h1>
+<p>chmod 600 geosceneserver.service</p>
+<h1 id="创建软连接">创建软连接</h1>
+<p>ln -s ../geosceneserver.service /etc/systemd/system/multi-user.target.wants/geosceneserver.service</p>
+<p>2、geoscene datastore [注意路径安装目录]</p>
+<h1 id="复制安装文件到-etcsystemdsystem下-1">复制安装文件到 /etc/systemd/system下</h1>
+<p>cp /home/geoscene/geoscene/datastore/framework/etc/scripts/geoscenedatastore.service  /etc/systemd/system</p>
+<h1 id="修改权限-600-1">修改权限 600</h1>
+<p>chmod 600 geoscenedatastore.service</p>
+<h1 id="创建软连接-1">创建软连接</h1>
+<p>ln -s ../geoscenedatastore.service /etc/systemd/system/multi-user.target.wants/geoscenedatastore.service</p>
+<p>添加成功后查看对应添加的服务</p>
+<h1 id="停止服务">停止服务</h1>
+<p>systemctl stop arcgisserver.service</p>
+<h1 id="启动服务">启动服务</h1>
+<p>systemctl start arcgisserver.service</p>
+<h1 id="状态查看">状态查看</h1>
+<p>systemctl status arcgisserver.service</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2022-05-25</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://example.org/posts/linux/geoscenserver2.0%E5%9F%BA%E7%A1%80%E9%83%A8%E7%BD%B2/" data-title="geoscen server基础部署-centos 7.6" data-hashtags="geoscen server"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://example.org/posts/linux/geoscenserver2.0%E5%9F%BA%E7%A1%80%E9%83%A8%E7%BD%B2/" data-hashtag="geoscen server"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="http://example.org/posts/linux/geoscenserver2.0%E5%9F%BA%E7%A1%80%E9%83%A8%E7%BD%B2/" data-title="geoscen server基础部署-centos 7.6"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="http://example.org/posts/linux/geoscenserver2.0%E5%9F%BA%E7%A1%80%E9%83%A8%E7%BD%B2/" data-title="geoscen server基础部署-centos 7.6"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://example.org/posts/linux/geoscenserver2.0%E5%9F%BA%E7%A1%80%E9%83%A8%E7%BD%B2/" data-title="geoscen server基础部署-centos 7.6"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/geoscen-server/">geoscen server</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/linux/debian11/" class="prev" rel="prev" title="debian 11基础环境准备"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>debian 11基础环境准备</a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{},"lightgallery":true,"search":{"highlightTag":"em","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

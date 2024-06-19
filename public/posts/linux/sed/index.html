@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>sed简单介绍 - langhaidian</title><meta name="Description" content="sed简单介绍"><meta property="og:title" content="sed简单介绍" />
+<meta property="og:description" content="sed简单介绍" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/linux/sed/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-14T11:04:49+08:00" />
+<meta property="article:modified_time" content="2022-03-14T11:04:49+08:00" /><meta property="og:site_name" content="My cool site" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content="sed简单介绍"/>
+<meta name="twitter:description" content="sed简单介绍"/>
+<meta name="application-name" content="loveit">
+<meta name="apple-mobile-web-app-title" content="loveit"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/img/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/posts/linux/sed/" /><link rel="prev" href="http://example.org/posts/linux/cnetos7%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/" /><link rel="next" href="http://example.org/posts/linux/debian11/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "sed简单介绍",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/posts\/linux\/sed\/"
+        },"genre": "posts","keywords": "sed","wordcount":  1648 ,
+        "url": "http:\/\/example.org\/posts\/linux\/sed\/","datePublished": "2022-03-14T11:04:49+08:00","dateModified": "2022-03-14T11:04:49+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "langhaidian"
+            },"description": "sed简单介绍"
+    }
+    </script></head>
+    <body data-header-desktop="normal" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="langhaidian"><span class="header-title-pre">📺</span><span class="header-title-post"> >_ </span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="langhaidian"><span class="header-title-pre">📺</span><span class="header-title-post"> >_ </span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">sed简单介绍</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://langhaidian.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>langhaidian</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/linux/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>linux</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-03-14">2022-03-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1648 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 4 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#语法">语法</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#第一部分">第一部分</a>
+          <ul>
+            <li>
+              <ul>
+                <li><a href="#准备测试数据">准备测试数据</a></li>
+                <li><a href="#1-替换每行第一个字符">1. 替换每行第一个字符</a></li>
+                <li><a href="#2-替换每行第二个字符">2. 替换每行第二个字符</a></li>
+                <li><a href="#3-替换每行所有字符">3. 替换每行所有字符</a></li>
+                <li><a href="#4-替换每行第三个开始的字符">4. 替换每行第三个开始的字符</a></li>
+                <li><a href="#5-字符分割加符号">5. 字符分割加符号</a></li>
+                <li><a href="#6-替换第几行的第一个字符第三行">6. 替换第几行的第一个字符(第三行)</a></li>
+                <li><a href="#7-显示被替换的行内容被替换的显示双行没有替换的显示原始数据">7. 显示被替换的行内容(被替换的显示双行，没有替换的显示原始数据)</a></li>
+                <li><a href="#8-只显示被替换的内容">8. 只显示被替换的内容</a></li>
+                <li><a href="#9-替换给定行数字符">9. 替换给定行数字符</a></li>
+                <li><a href="#10-删除行内容">10. 删除行内容</a></li>
+              </ul>
+            </li>
+            <li><a href="#第二部分">第二部分</a>
+              <ul>
+                <li><a href="#准备测试数据-1">准备测试数据</a></li>
+              </ul>
+            </li>
+            <li><a href="#文件间距处理">文件间距处理</a>
+              <ul>
+                <li><a href="#1-每行最后插入一个空白行">1. 每行最后插入一个空白行</a></li>
+                <li><a href="#2-插入2行空白行">2. 插入2行空白行</a></li>
+                <li><a href="#3-删除空白行在每行后面插入空白行">3. 删除空白行，在每行后面插入空白行</a></li>
+                <li><a href="#4-在匹配行上面插入一条黑线匹配love">4. 在匹配行上面插入一条黑线(匹配love)</a></li>
+                <li><a href="#5-在匹配行下面插入空白行匹配love">5. 在匹配行下面插入空白行(匹配love)</a></li>
+                <li><a href="#6-在每行左边插入5个空格">6. 在每行左边插入5个空格</a></li>
+              </ul>
+            </li>
+            <li><a href="#编号处理">编号处理</a>
+              <ul>
+                <li><a href="#1-每一行进行编号左对齐t为数字跟语句之间的制表符">1. 每一行进行编号(左对齐)，\t为数字跟语句之间的制表符</a></li>
+                <li><a href="#2-每行插入编号数字左边右对齐类似于cat--n-filename-增加编号效果">2. 每行插入编号(数字左边，右对齐)，类似于cat -n filename 增加编号效果</a></li>
+                <li><a href="#3-不为空行进行编号">3. 不为空行进行编号</a></li>
+              </ul>
+            </li>
+            <li><a href="#删除行">删除行</a>
+              <ul>
+                <li><a href="#1-删除指定行数">1. 删除指定行数</a></li>
+                <li><a href="#2-删除最后一行">2. 删除最后一行</a></li>
+                <li><a href="#3-删除指定范围行数内容">3. 删除指定范围行数内容</a></li>
+                <li><a href="#4删除置指定行数到最后一行">4.删除置指定行数到最后一行</a></li>
+                <li><a href="#5-删除匹配内容行内容">5. 删除匹配内容行内容</a></li>
+                <li><a href="#6-删除从第n行开始的2行内容">6. 删除从第n行开始的2行内容</a></li>
+                <li><a href="#7-删除匹配内容及其后的两行">7. 删除匹配内容及其后的两行</a></li>
+                <li><a href="#8-删除空白行">8. 删除空白行</a></li>
+                <li><a href="#9-删除空白行及开始内容">9. 删除空白行及#开始内容</a></li>
+              </ul>
+            </li>
+            <li><a href="#查看打印文件">查看打印文件</a>
+              <ul>
+                <li><a href="#1-查看指定范围行数内容">1. 查看指定范围行数内容</a></li>
+                <li><a href="#2-查看指定范围外内容">2. 查看指定范围外内容</a></li>
+                <li><a href="#3-查看文件第几行">3. 查看文件第几行</a></li>
+                <li><a href="#4-查看指定范围内内容">4. 查看指定范围内内容</a></li>
+                <li><a href="#5-查看最后一行内容">5. 查看最后一行内容</a></li>
+                <li><a href="#6-查看指定行术到最后一行内容">6. 查看指定行术到最后一行内容</a></li>
+                <li><a href="#7-打印匹配内容行内容">7 打印匹配内容行内容</a></li>
+                <li><a href="#8-打印匹配内容到到第n行">8. 打印匹配内容到到第n行</a></li>
+                <li><a href="#9-打印从第x行开始直到匹配的行内容">9. 打印从第x行开始直到匹配的行内容</a></li>
+                <li><a href="#10-打印匹配的行直到第x行">10. 打印匹配的行直到第x行</a></li>
+              </ul>
+            </li>
+            <li><a href="#替换命令">替换命令</a>
+              <ul>
+                <li><a href="#1-替换第一次出现的内容">1. 替换第一次出现的内容</a></li>
+                <li><a href="#2-替换一行中第x次出现内容">2. 替换一行中第x次出现内容</a></li>
+                <li><a href="#3-替换所有内容">3. 替换所有内容</a></li>
+                <li><a href="#4-替换从第x开始的字符">4. 替换从第x开始的字符</a></li>
+                <li><a href="#5-替换第x行内容">5. 替换第x行内容</a></li>
+                <li><a href="#6-替换指定范围内行内容">6. 替换指定范围内行内容</a></li>
+                <li><a href="#7-替换内容忽略大小写">7. 替换内容忽略大小写</a></li>
+                <li><a href="#8-使用一个空格替换所有">8. 使用一个空格替换所有</a></li>
+                <li><a href="#9-使用一种匹配模式替换另一个内容">9. 使用一种匹配模式替换另一个内容</a></li>
+                <li><a href="#10-除过第x行">10. 除过第x行</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h4 id="语法">语法</h4>
+<pre><code>sed options...[script][inputfile]
+</code></pre>
+<h2 id="第一部分">第一部分</h2>
+<h4 id="准备测试数据">准备测试数据</h4>
+<pre><code>cat &lt;&lt;EOF &gt; sedtest.conf
+unix is great os. unix is opensource. unix is free os.
+learn operating system.
+unix linux which one you choose.
+unix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+EOF
+</code></pre>
+<h4 id="1-替换每行第一个字符">1. 替换每行第一个字符</h4>
+<pre><code>$ sed 's/unix/linux/' sedtest.conf
+
+Output :
+linux is great os. unix is opensource. unix is free os.
+learn operating system.
+linux linux which one you choose.
+linux is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+</code></pre>
+<h4 id="2-替换每行第二个字符">2. 替换每行第二个字符</h4>
+<pre><code>$ sed 's/unix/linux/2' sedtest.conf
+
+Output :
+unix is great os. linux is opensource. unix is free os.
+learn operating system.
+unix linux which one you choose.
+unix is easy to learn.linux is a multiuser os.Learn unix .unix is a powerful.
+</code></pre>
+<h4 id="3-替换每行所有字符">3. 替换每行所有字符</h4>
+<pre><code>$ sed 's/unix/linux/g' sedtest.conf
+
+Output :
+linux is great os. linux is opensource. linux is free os.
+learn operating system.
+linux linux which one you choose.
+linux is easy to learn.linux is a multiuser os.Learn linux .linux is a powerful.
+</code></pre>
+<h4 id="4-替换每行第三个开始的字符">4. 替换每行第三个开始的字符</h4>
+<pre><code>$ sed 's/unix/linux/3g' sedtest.conf
+
+Output :
+unix is great os. unix is opensource. linux is free os.
+learn operating system.
+unix linux which one you choose.
+unix is easy to learn.unix is a multiuser os.Learn linux .linux is a powerful.
+</code></pre>
+<h4 id="5-字符分割加符号">5. 字符分割加符号</h4>
+<pre><code>$ echo &quot;Welcome To The Geek Stuff&quot; | sed 's/\(\b[A-Z]\)/\(\1\)/g'
+
+Output :
+(W)elcome (T)o (T)he (G)eek (S)tuff
+</code></pre>
+<h4 id="6-替换第几行的第一个字符第三行">6. 替换第几行的第一个字符(第三行)</h4>
+<pre><code>$ sed '3 s/unix/linux' sedtest.conf
+
+Output :
+unix is great os. unix is opensource. unix is free os.
+learn operating system.
+linux linux which one you choose.
+unix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+</code></pre>
+<h4 id="7-显示被替换的行内容被替换的显示双行没有替换的显示原始数据">7. 显示被替换的行内容(被替换的显示双行，没有替换的显示原始数据)</h4>
+<pre><code>$ sed 's/unix/linux/p' sedtest.conf
+
+Output :
+linux is great os. unix is opensource. unix is free os.
+linux is great os. unix is opensource. unix is free os.
+learn operating system.
+linux linux which one you choose.
+linux linux which one you choose.
+linux is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+linux is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+</code></pre>
+<h4 id="8-只显示被替换的内容">8. 只显示被替换的内容</h4>
+<pre><code>$ sed -n 's/unix/linux/p' sedtest.conf
+
+Output :
+linux is great os. unix is opensource. unix is free os.
+linux linux which one you choose.
+linux is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+</code></pre>
+<h4 id="9-替换给定行数字符">9. 替换给定行数字符</h4>
+<pre><code>$ sed '1,3 s/unix/linux/' sedtest.conf
+
+Output :
+linux is great os. unix is opensource. unix is free os.
+learn operating system.
+linux linux which one you choose.
+unix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+
+$ sed '2,$ s/unix/linux/' geekfile.txt
+
+Output :
+unix is great os. unix is opensource. unix is free os.
+learn operating system.
+linux linux which one you choose.
+linux is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful
+
+*** $ 代表文件最后一行内容 ***
+</code></pre>
+<h4 id="10-删除行内容">10. 删除行内容</h4>
+<pre><code>语法：$ sed 'nd' filename.txt
+例子：$ sed '5d' filename.txt
+
+$ sed '$d' filename.txt  //删除最后一行内容
+
+$ sed 'x,yd' filename.txt //删除x到y之间行内容
+  sed '3,6d' filename.txt
+
+$ sed 'nth,$d' filename.txt //  删除第几行到最后一行
+  sed '12,$d' filename.txt
+
+$ sed '/pattern/d' filename.txt //删除匹配到行
+  sed '/abc/d' filename.txt
+</code></pre>
+<h3 id="第二部分">第二部分</h3>
+<h4 id="准备测试数据-1">准备测试数据</h4>
+<pre><code>cat &lt;&lt;EOF &gt; sedtest.txt
+life isn't meant to be easy, life is meant to be lived.
+Try to learn &amp; understand something new everyday in life.
+Respect everyone &amp; most important love everyone.
+Don’t hesitate to ask for love &amp; don’t hesitate to show love too.
+Life is too short to be shy.
+In life, experience will help you differentiating right from wrong.
+EOF
+</code></pre>
+<h3 id="文件间距处理">文件间距处理</h3>
+<h4 id="1-每行最后插入一个空白行">1. 每行最后插入一个空白行</h4>
+<pre><code>$ sed G sedtest.txt
+
+Output: 
+life isn't meant to be easy, life is meant to be lived.
+
+Try to learn &amp; understand something new everyday in life.
+
+Respect everyone &amp; most important love everyone.
+
+Don’t hesitate to ask for love &amp; don’t hesitate to show love too.
+
+Life is too short to be shy.
+
+In life, experience will help you differentiating right from wrong.
+</code></pre>
+<h4 id="2-插入2行空白行">2. 插入2行空白行</h4>
+<pre><code>sed 'G;G' sedtest.txt
+</code></pre>
+<h4 id="3-删除空白行在每行后面插入空白行">3. 删除空白行，在每行后面插入空白行</h4>
+<pre><code>sed '/^$/d;G' sedtest.txt
+</code></pre>
+<h4 id="4-在匹配行上面插入一条黑线匹配love">4. 在匹配行上面插入一条黑线(匹配love)</h4>
+<pre><code>sed '/love/{x;p;x;}' sedtest.txt
+</code></pre>
+<h4 id="5-在匹配行下面插入空白行匹配love">5. 在匹配行下面插入空白行(匹配love)</h4>
+<pre><code>sed '/love/G' sedtest.txt
+</code></pre>
+<h4 id="6-在每行左边插入5个空格">6. 在每行左边插入5个空格</h4>
+<pre><code>sed 's/^/     /' sedtest.txt
+</code></pre>
+<h3 id="编号处理">编号处理</h3>
+<h4 id="1-每一行进行编号左对齐t为数字跟语句之间的制表符">1. 每一行进行编号(左对齐)，\t为数字跟语句之间的制表符</h4>
+<pre><code>sed = a.txt | sed 'N;s/\n/\t'
+</code></pre>
+<h4 id="2-每行插入编号数字左边右对齐类似于cat--n-filename-增加编号效果">2. 每行插入编号(数字左边，右对齐)，类似于cat -n filename 增加编号效果</h4>
+<pre><code>sed '/./=' a.txt | sed 'N;s/^/    ;s/*\(.\{4,\}\)\n/\1 /'
+</code></pre>
+<h4 id="3-不为空行进行编号">3. 不为空行进行编号</h4>
+<pre><code>sed '/./=' a.txt | sed '/./N; s/\n/ /'
+</code></pre>
+<h3 id="删除行">删除行</h3>
+<h4 id="1-删除指定行数">1. 删除指定行数</h4>
+<pre><code>sed '5d' a.txt   //删除第五行
+</code></pre>
+<h4 id="2-删除最后一行">2. 删除最后一行</h4>
+<pre><code>sed '$d' a.txt    //$ 代表最后一行
+</code></pre>
+<h4 id="3-删除指定范围行数内容">3. 删除指定范围行数内容</h4>
+<pre><code>sed '3,5d' a.txt   //删除第3-5行内容 
+</code></pre>
+<h4 id="4删除置指定行数到最后一行">4.删除置指定行数到最后一行</h4>
+<pre><code>sed '2,$d' a.txt   //第二行到最后一行
+</code></pre>
+<h4 id="5-删除匹配内容行内容">5. 删除匹配内容行内容</h4>
+<pre><code>sed '/life/d' a.txt
+</code></pre>
+<h4 id="6-删除从第n行开始的2行内容">6. 删除从第n行开始的2行内容</h4>
+<pre><code>sed '3~2d' a.txt
+</code></pre>
+<h4 id="7-删除匹配内容及其后的两行">7. 删除匹配内容及其后的两行</h4>
+<pre><code>sed '/easy/,+2d' a.txt
+</code></pre>
+<h4 id="8-删除空白行">8. 删除空白行</h4>
+<pre><code>sed '^$/d' a.txt
+</code></pre>
+<h4 id="9-删除空白行及开始内容">9. 删除空白行及#开始内容</h4>
+<pre><code>sed -i '/^#/d;/^$/d' a.txt
+</code></pre>
+<h3 id="查看打印文件">查看打印文件</h3>
+<h4 id="1-查看指定范围行数内容">1. 查看指定范围行数内容</h4>
+<pre><code>sed -n '2,5p' a.txt
+</code></pre>
+<h4 id="2-查看指定范围外内容">2. 查看指定范围外内容</h4>
+<pre><code>sed '2,4d' a.txt
+</code></pre>
+<h4 id="3-查看文件第几行">3. 查看文件第几行</h4>
+<pre><code>sed -n '4'p a.txt  //第4行内容
+</code></pre>
+<h4 id="4-查看指定范围内内容">4. 查看指定范围内内容</h4>
+<pre><code>sed -n '4,6'p a.txt
+</code></pre>
+<h4 id="5-查看最后一行内容">5. 查看最后一行内容</h4>
+<pre><code>sed -n '$'p a.txt
+</code></pre>
+<h4 id="6-查看指定行术到最后一行内容">6. 查看指定行术到最后一行内容</h4>
+<pre><code>sed -n '3,$'p a.txt //第三行到最后一行
+</code></pre>
+<h4 id="7-打印匹配内容行内容">7 打印匹配内容行内容</h4>
+<pre><code>sed -n /every/p a.txt
+</code></pre>
+<h4 id="8-打印匹配内容到到第n行">8. 打印匹配内容到到第n行</h4>
+<pre><code>sed -n '/everyone/,5p' a.txt  //从匹配行打印到第5行
+</code></pre>
+<h4 id="9-打印从第x行开始直到匹配的行内容">9. 打印从第x行开始直到匹配的行内容</h4>
+<pre><code>sed -n ‘x,/pattern/p’ filename 
+sed -n '1,/everyone/p' a.txt
+</code></pre>
+<h4 id="10-打印匹配的行直到第x行">10. 打印匹配的行直到第x行</h4>
+<pre><code>sed -n '/pattern/,+xp' filename
+sde -n '/learn/,+2p' a.txt
+</code></pre>
+<h3 id="替换命令">替换命令</h3>
+<h4 id="1-替换第一次出现的内容">1. 替换第一次出现的内容</h4>
+<pre><code>sed 's/life/leaves/' a.txt
+</code></pre>
+<h4 id="2-替换一行中第x次出现内容">2. 替换一行中第x次出现内容</h4>
+<pre><code>sed 's/to/two/2' a.txt
+</code></pre>
+<h4 id="3-替换所有内容">3. 替换所有内容</h4>
+<pre><code>sed 's/life/learn/g' a.txt
+</code></pre>
+<h4 id="4-替换从第x开始的字符">4. 替换从第x开始的字符</h4>
+<pre><code>sed 's/to/TWO/2g' a.txt
+</code></pre>
+<h4 id="5-替换第x行内容">5. 替换第x行内容</h4>
+<pre><code>sed '3 s/every/each/' a.txt
+sed '3 s/every/each/p' a.txt //打印 
+</code></pre>
+<h4 id="6-替换指定范围内行内容">6. 替换指定范围内行内容</h4>
+<pre><code>sed '2,5 s/to/TWO/' a.txt
+</code></pre>
+<h4 id="7-替换内容忽略大小写">7. 替换内容忽略大小写</h4>
+<pre><code>sed 's/life/Love/i' a.txt
+sed 's/[Ll]ife/Love/g' a.txt  //匹配life、Life替换内容
+</code></pre>
+<h4 id="8-使用一个空格替换所有">8. 使用一个空格替换所有</h4>
+<pre><code>sed 's/  */ /g' filename
+</code></pre>
+<h4 id="9-使用一种匹配模式替换另一个内容">9. 使用一种匹配模式替换另一个内容</h4>
+<pre><code>Syntax: sed ‘/followed_pattern/ s/old_pattern/new_pattern/’ filename 
+sed '/is/ s/live/love' a.txt  //匹配第一个内容去替换
+</code></pre>
+<h4 id="10-除过第x行">10. 除过第x行</h4>
+<pre><code>sed -i '5!s/life/love' a.txt   //第5行除过</code></pre>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2022-03-14</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://example.org/posts/linux/sed/" data-title="sed简单介绍" data-hashtags="sed"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://example.org/posts/linux/sed/" data-hashtag="sed"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="http://example.org/posts/linux/sed/" data-title="sed简单介绍"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="http://example.org/posts/linux/sed/" data-title="sed简单介绍"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://example.org/posts/linux/sed/" data-title="sed简单介绍"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/sed/">sed</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/linux/cnetos7%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/" class="prev" rel="prev" title="centos7内核4.19升级到5.14"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>centos7内核4.19升级到5.14</a>
+            <a href="/posts/linux/debian11/" class="next" rel="next" title="debian 11基础环境准备">debian 11基础环境准备<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{},"lightgallery":true,"search":{"highlightTag":"em","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

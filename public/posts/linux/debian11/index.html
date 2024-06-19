@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>debian 11基础环境准备 - langhaidian</title><meta name="Description" content="debian 11基础环境准备"><meta property="og:title" content="debian 11基础环境准备" />
+<meta property="og:description" content="debian 11基础环境准备" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/linux/debian11/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-03-14T11:04:49+08:00" />
+<meta property="article:modified_time" content="2022-03-14T11:04:49+08:00" /><meta property="og:site_name" content="My cool site" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content="debian 11基础环境准备"/>
+<meta name="twitter:description" content="debian 11基础环境准备"/>
+<meta name="application-name" content="loveit">
+<meta name="apple-mobile-web-app-title" content="loveit"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/img/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/posts/linux/debian11/" /><link rel="prev" href="http://example.org/posts/linux/sed/" /><link rel="next" href="http://example.org/posts/linux/geoscenserver2.0%E5%9F%BA%E7%A1%80%E9%83%A8%E7%BD%B2/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "debian 11基础环境准备",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/posts\/linux\/debian11\/"
+        },"genre": "posts","keywords": "debian 11","wordcount":  1434 ,
+        "url": "http:\/\/example.org\/posts\/linux\/debian11\/","datePublished": "2022-03-14T11:04:49+08:00","dateModified": "2022-03-14T11:04:49+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "langhaidian"
+            },"description": "debian 11基础环境准备"
+    }
+    </script></head>
+    <body data-header-desktop="normal" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="langhaidian"><span class="header-title-pre">📺</span><span class="header-title-post"> >_ </span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="langhaidian"><span class="header-title-pre">📺</span><span class="header-title-post"> >_ </span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">debian 11基础环境准备</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="https://langhaidian.io" title="Author" target="_blank" rel="noopener noreffer author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>langhaidian</a></span>&nbsp;<span class="post-category">收录于 <a href="/categories/debian-11/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>debian 11</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2022-03-14">2022-03-14</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 1434 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 3 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li>
+              <ul>
+                <li>
+                  <ul>
+                    <li><a href="#通过timedatectl进行设置">通过timedatectl进行设置</a></li>
+                    <li><a href="#通过软连接进行设置">通过软连接进行设置</a></li>
+                  </ul>
+                </li>
+                <li><a href="#sbin">sbin</a></li>
+                <li><a href="#13-修改docker默认varlibdocker存储">13 修改docker默认/var/lib/docker存储</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>####1. 替换默认源
+cat &laquo; EOF &gt; /etc/apt/source.list
+# Official sources.list
+deb <a href="http://deb.debian.org/debian/" target="_blank" rel="noopener noreffer ">http://deb.debian.org/debian/</a> bullseye main
+deb-src <a href="http://deb.debian.org/debian/" target="_blank" rel="noopener noreffer ">http://deb.debian.org/debian/</a> bullseye main</p>
+<pre><code>deb http://security.debian.org/debian-security bullseye-security main contrib
+deb-src http://security.debian.org/debian-security bullseye-security main contrib
+
+deb http://deb.debian.org/debian/ bullseye-updates main contrib
+deb-src http://deb.debian.org/debian/ bullseye-updates main contrib
+
+#Contrib &amp; Non-Free
+deb http://deb.debian.org/debian bullseye main contrib non-free
+deb-src http://deb.debian.org/debian bullseye main contrib non-free
+
+deb http://deb.debian.org/debian-security bullseye/updates main contrib non-free
+deb-src http://deb.debian.org/debian-security bullseye/updates main contrib non-free
+
+deb http://deb.debian.org/debian bullseye-updates main contrib non-free
+deb-src http://deb.debian.org/debian bullseye-updates main contrib non-free
+#Backports
+deb http://deb.debian.org/debian bullseye-backports main contrib non-free
+deb-src http://deb.debian.org/debian bullseye-backports main contrib non-free
+EOF
+
+更新系统：
+  sudo apt update #更新源
+  sudo apt upgrade #更新已安装的包
+  sudo apt dist-upgrade #升级系统
+  sudo apt clean &amp;&amp; sudo apt autoclean #清理下载文件的存档
+</code></pre>
+<p>####2. 给root账户设置或者修改密码</p>
+<pre><code>passwd root
+</code></pre>
+<p>####3. 安装sudo
+apt install sudo</p>
+<pre><code>**给普通用户添加sudo权限
+usermod -a -G sudo XXXX
+</code></pre>
+<p>####4. 默认root禁止ssh远程登录(推荐保持默认)</p>
+<pre><code>修改配置文件
+sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
+sudo vi /etc/ssh/sshd_config
+
+#Authentication:
+#LoginGraceTime 2m
+#PermitRootLogin prohibit-password
+#StrictModes yes
+#MaxAuthTries 6
+#MaxSessions 10
+#PubkeyAuthentication yes
+
+增加一句
+PermitRootLogin yes
+
+快速配置：
+sudo sed -i &quot;/^#PermitRootLogin/c&quot;PermitRootLogin&quot; &quot; yes&quot;&quot; /etc/ssh/sshd_config
+
+补充：
+PermitRootLogin prohibit-password  #允许 root 登录，但禁止适用密码认证
+可以配合使用 Pubkey 认证，修改 PubkeyAuthentication yes
+
+重启服务生效：
+sudo systemctl restart ssh
+</code></pre>
+<p>####5. 配置网络
+vim /etc/network/interfaces
+============
+# 修改为以下内容：
+iface lo inet loopback
+auto lo</p>
+<pre><code>auto eth0
+iface eth0 inet static
+address 10.10.1.5
+netmask 255.255.255.0
+#broadcast 10.10.1.255 #可选，上述配置了掩码
+#network 10.10.1.0 #可选，上述配置了掩码
+gateway 10.10.1.1
+#dns-domain sysin.org
+# domain 和 search 不能共存；如果同时存在，后面出现的将会被使用。
+dns-search sysin.org
+dns-nameservers 10.10.1.1 8.8.8.8 #注意 debian 11 默认没有安装 resolvconf，所以需要手动在 resolv.conf 中编辑 DNS
+============
+# 或者安装 resolvconf 后，在这里配置，将自动更新 resolv.conf
+sudo apt install resolvconf
+# iface eth0 inet6 auto #ipv6 自动配置，不写则表示禁用了
+============
+# DHCP 配置如下：
+auto eth0
+iface eth0 inet dhcp
+=============
+# 配置 DNS
+cat /etc/resolv.conf #如果已经安装 resolvconf，不要手动编辑，直接在上述 interfaces 中编辑 dns
+
+=============
+# 重启网络
+sudo systemctl restart networking
+#sudo service networking restart
+
+=================
+配置多个ip
+auto eth0:0
+iface eth0:0 inet static
+    address 192.168.1.90
+    netmask 255.255.255.0
+
+auto eth0:1
+iface eth0:1 inet static
+    address 192.168.1.91
+    netmask 255.255.255.0
+    gateway 192.168.1.1
+=======
+
+#添加静态路由信息
+cat &gt;&gt; /etc/network/interfaces &lt;&lt;EOF
+# static routes
+up ip route add 10.10.12.0/24 via 10.10.1.1 dev eth0
+up ip route add 10.10.13.0/24 via 10.10.1.1 dev eth0
+up ip route add 10.10.14.0/24 via 10.10.1.1 dev eth0
+up ip route add 10.10.15.0/24 via 10.10.1.1 dev eth0
+up ip route add 10.10.16.0/24 via 10.10.1.1 dev eth0
+EOF
+
+#重启网络
+systemctl restart networking
+
+#验证
+ip route
+</code></pre>
+<p>####6. 修改主机名
+vim /etc/hostname
+hostnamectl set-hostname debian-01 &ndash;static</p>
+<pre><code>vim /etc/hosts
+# 添加一行
+127.0.0.1  debian01.sysin.org debian01
+# 注意这里的格式，IP 后面先写 FQDN 再写主机名，与 CentOS 相同
+# 先写 FQDN 后写主机名，顺序反了不影响解析，但是'hostname -f'命令无法显示 FQDN，只能显示主机名
+</code></pre>
+<p>####7. 安装intel无线网卡
+查看网线设备信息
+lspci -nn
+安装wifi驱动包
+apt update &amp;&amp; apt install firmware-iwlwifi
+重新加载wifi模块
+modprobe -r iwlwifi ; modprobe iwlwifi</p>
+<p>####8. 修改默认ulimt参数</p>
+<pre><code>cat &lt;&lt; EOF &gt;&gt; /etc/security/limits.conf
+* soft nofile 65535
+* hard nofile 65535
+* soft nproc 65535
+* hard nproc 65535
+EOF
+
+
+cat &lt;&lt; EOF &gt; /etc/security/limits.d/20-nproc.conf
+*          soft    nproc     65535
+root       soft    nproc     unlimited
+EOF
+</code></pre>
+<p>####9. 安装openjdk8</p>
+<pre><code>##sudo apt install apt-transport-https ca-certificates wget dirmngr gnupg software-properties-common 
+
+wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
+
+sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
+
+sudo apt-get update &amp;&amp; sudo apt-get install adoptopenjdk-8-hotspot
+sudo apt update
+sudo apt install adoptopenjdk-8-hotspot
+</code></pre>
+<p>####10. 安装docker及docker-compose</p>
+<pre><code>## 卸载旧版本软件
+sudo apt-get remove docker docker-engine docker.io containerd runc
+
+## 安装依赖 
+sudo apt-get update
+sudo apt-get install \
+ca-certificates \
+curl \
+gnupg \
+lsb-release
+## 导入gpg key
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+
+## 添加仓库
+echo \
+&quot;deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
+$(lsb_release -cs) stable&quot; | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+
+## 开始安装
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+</code></pre>
+<p>####11. 设置时区</p>
+<h5 id="通过timedatectl进行设置">通过timedatectl进行设置</h5>
+<pre><code>检查当前时区:
+
+timedatectl
+               Local time: Fri 2020-04-03 19:23:29 UTC
+       Universal time: Fri 2020-04-03 19:23:29 UTC
+             RTC time: Fri 2020-04-03 19:23:29
+            Time zone: UTC (UTC, +0000)
+            .....
+
+##更改时区
+timedatectl list-timezones ｜ grep Shanghai ##过滤上海时区
+
+sudo timedatectl set-timezone your_time_zone  ##更改时区
+sudo timedatectl set-timezone Asia/Shanghai ##设置上海时区
+
+##查看和验证时区
+timedatectl  
+               Local time: Fri 2020-04-03 13:30:30 CST
+       Universal time: Fri 2020-04-03 19:30:30 UTC
+             RTC time: Fri 2020-04-03 19:30:30
+            Time zone: America/Monterrey (CST, -0600)
+            .......
+
+date ## 查看具体时间
+</code></pre>
+<h5 id="通过软连接进行设置">通过软连接进行设置</h5>
+<p>较旧版本debian，没有timedatectl可以通过软连接进行设置，可以通过/etc/localtime文件符号链接到/usr/share/zoShanghai</p>
+<pre><code>##查看正确时区进行设置
+sudo ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+##验证
+date
+Fri 03 Apr 2020 01:34:27 PM CST
+</code></pre>
+<h4 id="sbin">sbin</h4>
+<p>export PATH=/usr/loca/sbin:/usr/sbin:/sbin:$PATH</p>
+<p>####12 时间同步
+a. 同步另外一台时间</p>
+<pre><code>date --set=&quot;$ssh root@host date&quot;
+</code></pre>
+<p>b. 搭建ntp服务器</p>
+<pre><code>ntpdate hostip
+或者
+sntp -P no -r hostip
+</code></pre>
+<h4 id="13-修改docker默认varlibdocker存储">13 修改docker默认/var/lib/docker存储</h4>
+<pre><code>a. 停止docker服务
+sudo systemctl stop docker
+sudo systemctl status docker
+
+查看服务状态
+ps faux | grep -i docker
+
+b. 创建新路径
+mkdir /new/dir
+
+c.修改daemon.json文件
+{
+    &quot;data-root&quot;: &quot;/new/dir&quot;
+}
+
+c.同步
+sudo cp -axT /var/lib/dockr /new/dir
+或者
+sudo rsync -avxP /var/lib/docker /new/path/docker-data-root
+
+
+d. 重启服务
+sudo systemctl daemon-reload
+sudo systemctl start docker
+
+e. 测试服务状态
+sudo docker images
+</code></pre>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 2022-03-14</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://example.org/posts/linux/debian11/" data-title="debian 11基础环境准备" data-hashtags="debian 11"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://example.org/posts/linux/debian11/" data-hashtag="debian 11"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="http://example.org/posts/linux/debian11/" data-title="debian 11基础环境准备"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="http://example.org/posts/linux/debian11/" data-title="debian 11基础环境准备"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://example.org/posts/linux/debian11/" data-title="debian 11基础环境准备"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/debian-11/">debian 11</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/linux/sed/" class="prev" rel="prev" title="sed简单介绍"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>sed简单介绍</a>
+            <a href="/posts/linux/geoscenserver2.0%E5%9F%BA%E7%A1%80%E9%83%A8%E7%BD%B2/" class="next" rel="next" title="geoscen server基础部署-centos 7.6">geoscen server基础部署-centos 7.6<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/css/lightgallery-bundle.min.css"><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/thumbnail/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery@2.5.0/plugins/zoom/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{},"lightgallery":true,"search":{"highlightTag":"em","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title> - langhaidian</title><meta name="Description" content="这是我的全新 Hugo 网站"><meta property="og:title" content="" />
+<meta property="og:description" content="备份 pg_dump -F c -F 路径/testdb.dmp -h 127.0.0.1 -U postgres testdb 恢复 pg_restore -d testdb testdb.dmp -h 127.0.0.1 -U postgres 数据库归档模式： 1. 修改postgresql.conf文件中的相关参数，包" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/postgres/postgers%E5%A4%87%E4%BB%BD%E5%9B%9E%E5%A4%8D/" /><meta property="og:image" content="http://example.org/logo.png"/><meta property="article:section" content="posts" />
+
+<meta property="og:site_name" content="My cool site" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://example.org/logo.png"/>
+
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="备份 pg_dump -F c -F 路径/testdb.dmp -h 127.0.0.1 -U postgres testdb 恢复 pg_restore -d testdb testdb.dmp -h 127.0.0.1 -U postgres 数据库归档模式： 1. 修改postgresql.conf文件中的相关参数，包"/>
+<meta name="application-name" content="loveit">
+<meta name="apple-mobile-web-app-title" content="loveit"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="/img/favicon.ico"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://example.org/posts/postgres/postgers%E5%A4%87%E4%BB%BD%E5%9B%9E%E5%A4%8D/" /><link rel="next" href="http://example.org/posts/other/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%BA%A7%E6%95%85%E9%9A%9C%E6%80%BB%E7%BB%93/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/example.org\/posts\/postgres\/postgers%E5%A4%87%E4%BB%BD%E5%9B%9E%E5%A4%8D\/"
+        },"genre": "posts","wordcount":  562 ,
+        "url": "http:\/\/example.org\/posts\/postgres\/postgers%E5%A4%87%E4%BB%BD%E5%9B%9E%E5%A4%8D\/","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "作者"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="normal" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="langhaidian"><span class="header-title-pre">📺</span><span class="header-title-post"> >_ </span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 文章 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><a class="menu-item" href="/about/"> 关于 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="langhaidian"><span class="header-title-pre">📺</span><span class="header-title-post"> >_ </span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw" aria-hidden="true"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">文章</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a class="menu-item" href="/about/" title="">关于</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><div class="search-dropdown desktop">
+        <div id="search-dropdown-desktop"></div>
+    </div>
+    <div class="search-dropdown mobile">
+        <div id="search-dropdown-mobile"></div>
+    </div><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX"></h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>作者</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="0001-01-01">0001-01-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;约 562 字&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;预计阅读 2 分钟&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#备份">备份</a></li>
+            <li><a href="#恢复">恢复</a></li>
+            <li><a href="#数据库归档模式">数据库归档模式：</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="备份">备份</h3>
+<p>pg_dump -F c -F 路径/testdb.dmp -h 127.0.0.1 -U postgres testdb</p>
+<h3 id="恢复">恢复</h3>
+<p>pg_restore -d testdb testdb.dmp -h 127.0.0.1 -U postgres</p>
+<h3 id="数据库归档模式">数据库归档模式：</h3>
+<pre tabindex="0"><code>1. 修改postgresql.conf文件中的相关参数，包括：
+archive_mode = on # 开启归档模式，可以是off, on, 或者always
+archive_command = ‘DATE=`date +%Y%m%d`;DIR=/var/lib/postgresql/arch/$DATE;test ! -d $DIR &amp;&amp; mkdir -p $DIR;test ! -f $DIR/%f &amp;&amp; cp %p $DIR/%f’ # 指定归档命令，可以是一个shell命令或者脚本，其中%p表示WAL文件的完整路径，%f表示WAL文件的名称
+wal_level = replica # 或者logical，指定WAL日志的输出级别，minimal不支持归档
+2. 创建归档目录，并赋予postgres用户相应的权限，例如：
+mkdir -p /var/lib/postgresql/arch
+chown -R postgres.postgres /var/lib/postgresql/arch/
+3. 重启PostgreSQL服务，使配置生效，例如：
+service postgresql-13 restart
+4. 验证归档模式是否开启成功，可以通过以下方法：
+查看archive_mode参数的值，应该是on或者always
+手动切换WAL日志文件，使用select pg_switch_wal()命令，并查看归档目录是否有新的WAL文件生成
+查看日志文件中是否有归档相关的信息或者错误
+</code></pre><p>#!/bin/bash</p>
+<p>BACKUP_LOCAL_DIR=/opt/local
+BACKUP_CON_DIR=/opt/con</p>
+<p>BACKUP_DAY=7</p>
+<p>#数据库名称
+DB_NAME_dev=dev_dotnet
+TODAY=<code>data +%Y-%m-%d</code></p>
+<p>#删除超过7天的备份
+find $BACKUP_LOCAL_DIR -type f -name dev_dotent* -mtime +BACKUP_DAY -exec rm -rf {} ;</p>
+<p>#进行数据备份
+sudo docker exec -it postgres pg_dump -F c -f $BACKUP_CON_DIR/dev_dotnet_$TODAY.dmp -h 127.0.0.1 -U postgres dev_dotnet</p>
+<p>#压缩备份文件
+sudo gzip $BACKUP_LOCAL_DIR/dev_dotnet_$TODAY.dmp</p>
+<p>#显示备份成功
+echo &ldquo;$DB_NAME_dev $TODAY 数据库备份成功！&rdquo;</p>
+<p>#归档日志处理
+vi postgresql.conf</p>
+<p>archive_mode = on
+archive_command = &lsquo;DATE=<code>date +%Y%m%d</code>; DIR=&quot;/var/lib/postgresql/arch/$DATE&quot;; test ! -d $DIR &amp;&amp; mkdir -p $DIR; test ! -f $DIR/%f &amp;&amp; cp %p %DIR/%f; find  /var/lib/postgresql/arch/ -type d -mtime 7 -exec rm -f {} ;&rsquo;</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>更新于 0001-01-01</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="http://example.org/posts/postgres/postgers%E5%A4%87%E4%BB%BD%E5%9B%9E%E5%A4%8D/" data-title=""><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="http://example.org/posts/postgres/postgers%E5%A4%87%E4%BB%BD%E5%9B%9E%E5%A4%8D/"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Hacker News" data-sharer="hackernews" data-url="http://example.org/posts/postgres/postgers%E5%A4%87%E4%BB%BD%E5%9B%9E%E5%A4%8D/" data-title=""><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="http://example.org/posts/postgres/postgers%E5%A4%87%E4%BB%BD%E5%9B%9E%E5%A4%8D/" data-title=""><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="http://example.org/posts/postgres/postgers%E5%A4%87%E4%BB%BD%E5%9B%9E%E5%A4%8D/" data-title=""><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav">
+            <a href="/posts/other/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%BA%A7%E6%95%85%E9%9A%9C%E6%80%BB%E7%BB%93/" class="next" rel="next" title=""><i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">由 <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.92.0">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.38.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"复制到剪贴板","maxShownLines":50},"comment":{},"search":{"highlightTag":"em","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","maxResultLength":10,"noResultsFound":"没有找到结果","snippetLength":50}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

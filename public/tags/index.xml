@@ -1,0 +1,87 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tags - 标签 - langhaidian</title>
+        <link>http://example.org/tags/</link>
+        <description>Tags - 标签 - langhaidian</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 25 May 2022 11:04:49 &#43;0800</lastBuildDate><atom:link href="http://example.org/tags/" rel="self" type="application/rss+xml" /><item>
+    <title>geoscen server</title>
+    <link>http://example.org/tags/geoscen-server/</link>
+    <pubDate>Wed, 25 May 2022 11:04:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/geoscen-server/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>debian 11</title>
+    <link>http://example.org/tags/debian-11/</link>
+    <pubDate>Mon, 14 Mar 2022 11:04:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/debian-11/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>sed</title>
+    <link>http://example.org/tags/sed/</link>
+    <pubDate>Mon, 14 Mar 2022 11:04:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/sed/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>centos7</title>
+    <link>http://example.org/tags/centos7/</link>
+    <pubDate>Thu, 10 Feb 2022 11:04:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/centos7/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>date</title>
+    <link>http://example.org/tags/date/</link>
+    <pubDate>Thu, 10 Feb 2022 11:04:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/date/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>debian 10</title>
+    <link>http://example.org/tags/debian-10/</link>
+    <pubDate>Thu, 10 Feb 2022 11:04:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/debian-10/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>docker</title>
+    <link>http://example.org/tags/docker/</link>
+    <pubDate>Thu, 10 Feb 2022 11:04:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/docker/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>iperf</title>
+    <link>http://example.org/tags/iperf/</link>
+    <pubDate>Thu, 10 Feb 2022 11:04:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/iperf/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>mkcert</title>
+    <link>http://example.org/tags/mkcert/</link>
+    <pubDate>Thu, 10 Feb 2022 11:04:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/mkcert/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>tomcat</title>
+    <link>http://example.org/tags/tomcat/</link>
+    <pubDate>Thu, 10 Feb 2022 11:04:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/tags/tomcat/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

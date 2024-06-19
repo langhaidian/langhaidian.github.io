@@ -1,0 +1,31 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Categories - 分类 - langhaidian</title>
+        <link>http://example.org/categories/</link>
+        <description>Categories - 分类 - langhaidian</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Wed, 25 May 2022 11:04:49 &#43;0800</lastBuildDate><atom:link href="http://example.org/categories/" rel="self" type="application/rss+xml" /><item>
+    <title>linux</title>
+    <link>http://example.org/categories/linux/</link>
+    <pubDate>Wed, 25 May 2022 11:04:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/categories/linux/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>debian 11</title>
+    <link>http://example.org/categories/debian-11/</link>
+    <pubDate>Mon, 14 Mar 2022 11:04:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/categories/debian-11/</guid>
+    <description><![CDATA[]]></description>
+</item>
+<item>
+    <title>docker</title>
+    <link>http://example.org/categories/docker/</link>
+    <pubDate>Thu, 10 Feb 2022 11:04:49 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>http://example.org/categories/docker/</guid>
+    <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

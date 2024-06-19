@@ -18,6 +18,14 @@ lightgallery: true
 ---
 
 
+# 1. 参考仓库
 
-# 1. app基础信息（strava）
-  
+  * https://github.com/yihong0618/running_page
+
+# 2. 自己搭建完的仓库
+  * https://github.com/langhaidian/running_page
+
+# 3. 效果展示内容
+  * vercel站点["running page"](https://langhaidian-running-page.vercel.app)
+  * github.io站点["running page"](  https://langhaidian.github.io/running_page)
+

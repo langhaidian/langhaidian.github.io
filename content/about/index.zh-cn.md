@@ -9,12 +9,12 @@ math:
   enable: true
 ---
 
-### About
+### 关于
 
 狼孩
 
-#### 主要介绍
-* SRE、golang、kubernetes、docker 
+#### 关注
+* python、SRE、golang、kubernetes、docker 
 
 #### 联系方式
 * Email：sergio13848@gmail.com

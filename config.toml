@@ -65,7 +65,7 @@ theme = "LoveIt"
       # Gravatar 邮箱，用于优先在主页显示的头像
       gravatarEmail = "sergio13848@gmail.com"
       # 主页显示头像的 URL
-      avatarURL = "https://avatars.githubusercontent.com/u/5392727?s=96&v=4"
+      avatarURL = "/img/avatar.png"
       # LoveIt 更改 | 0.2.7 主页显示的网站标题 (支持 HTML 格式)
       title = ""
       # 主页显示的网站副标题

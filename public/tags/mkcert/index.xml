@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Mkcert on langhaidian</title>
+    <link>https://examplesite.com/tags/mkcert/</link>
+    <description>Recent content in Mkcert on langhaidian</description>
+    <image>
+      <title>langhaidian</title>
+      <url>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.140.0</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 10 Feb 2022 11:04:49 +0800</lastBuildDate>
+    <atom:link href="https://examplesite.com/tags/mkcert/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mkcert生成GeosceneServer证书</title>
+      <link>https://examplesite.com/posts/linux/mkcert%E7%94%9F%E6%88%90geosceneserver%E8%AF%81%E4%B9%A6/</link>
+      <pubDate>Thu, 10 Feb 2022 11:04:49 +0800</pubDate>
+      <guid>https://examplesite.com/posts/linux/mkcert%E7%94%9F%E6%88%90geosceneserver%E8%AF%81%E4%B9%A6/</guid>
+      <description>Desc Text.</description>
+    </item>
+  </channel>
+</rss>

@@ -11,19 +11,19 @@
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 10 Feb 2022 11:04:49 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 10 Jun 2024 11:04:49 +0800</lastBuildDate>
     <atom:link href="https://examplesite.com/tags/debian-11/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>debian 11基础环境准备</title>
       <link>https://examplesite.com/posts/linux/debian11/</link>
-      <pubDate>Thu, 10 Feb 2022 11:04:49 +0800</pubDate>
+      <pubDate>Mon, 10 Jun 2024 11:04:49 +0800</pubDate>
       <guid>https://examplesite.com/posts/linux/debian11/</guid>
       <description>Desc Text.</description>
     </item>
     <item>
       <title>debian升级内核</title>
       <link>https://examplesite.com/posts/linux/debian%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/</link>
-      <pubDate>Thu, 10 Feb 2022 11:04:49 +0800</pubDate>
+      <pubDate>Sat, 10 Feb 2024 11:04:49 +0800</pubDate>
       <guid>https://examplesite.com/posts/linux/debian%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/</guid>
       <description>Desc Text.</description>
     </item>

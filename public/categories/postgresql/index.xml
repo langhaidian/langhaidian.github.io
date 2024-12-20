@@ -11,12 +11,12 @@
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 10 Feb 2022 11:04:49 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 10 Feb 2024 11:04:49 +0800</lastBuildDate>
     <atom:link href="https://examplesite.com/categories/postgresql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>postgresql简单记录备份</title>
       <link>https://examplesite.com/posts/postgres/postgers%E5%A4%87%E4%BB%BD%E5%9B%9E%E5%A4%8D/</link>
-      <pubDate>Thu, 10 Feb 2022 11:04:49 +0800</pubDate>
+      <pubDate>Sat, 10 Feb 2024 11:04:49 +0800</pubDate>
       <guid>https://examplesite.com/posts/postgres/postgers%E5%A4%87%E4%BB%BD%E5%9B%9E%E5%A4%8D/</guid>
       <description>Desc Text.</description>
     </item>

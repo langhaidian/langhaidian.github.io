@@ -2,151 +2,151 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://examplesite.com/tags/date/</loc>
+    <loc>https://langhaidian.github.io//tags/date/</loc>
     <lastmod>2024-08-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/</loc>
+    <loc>https://langhaidian.github.io//categories/</loc>
     <lastmod>2024-08-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/</loc>
+    <loc>https://langhaidian.github.io//</loc>
     <lastmod>2024-08-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/linux/</loc>
+    <loc>https://langhaidian.github.io//categories/linux/</loc>
     <lastmod>2024-08-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/linux/linux%E8%AE%BE%E7%BD%AE%E6%97%B6%E9%97%B4/</loc>
+    <loc>https://langhaidian.github.io//posts/linux/linux%E8%AE%BE%E7%BD%AE%E6%97%B6%E9%97%B4/</loc>
     <lastmod>2024-08-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/mkcert/</loc>
+    <loc>https://langhaidian.github.io//tags/mkcert/</loc>
     <lastmod>2024-08-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/linux/mkcert%E7%94%9F%E6%88%90geosceneserver%E8%AF%81%E4%B9%A6/</loc>
+    <loc>https://langhaidian.github.io//posts/linux/mkcert%E7%94%9F%E6%88%90geosceneserver%E8%AF%81%E4%B9%A6/</loc>
     <lastmod>2024-08-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/</loc>
+    <loc>https://langhaidian.github.io//posts/</loc>
     <lastmod>2024-08-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/running/</loc>
+    <loc>https://langhaidian.github.io//categories/running/</loc>
     <lastmod>2024-08-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/</loc>
+    <loc>https://langhaidian.github.io//tags/</loc>
     <lastmod>2024-08-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/virtualenv-python/</loc>
+    <loc>https://langhaidian.github.io//tags/virtualenv-python/</loc>
     <lastmod>2024-08-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/%E8%AF%81%E4%B9%A6/</loc>
+    <loc>https://langhaidian.github.io//categories/%E8%AF%81%E4%B9%A6/</loc>
     <lastmod>2024-08-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/other/running/</loc>
+    <loc>https://langhaidian.github.io//posts/other/running/</loc>
     <lastmod>2024-08-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/linux/geoscenserver2.0%E5%9F%BA%E7%A1%80%E9%83%A8%E7%BD%B2/</loc>
+    <loc>https://langhaidian.github.io//posts/linux/geoscenserver2.0%E5%9F%BA%E7%A1%80%E9%83%A8%E7%BD%B2/</loc>
     <lastmod>2024-07-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/geoscene/</loc>
+    <loc>https://langhaidian.github.io//tags/geoscene/</loc>
     <lastmod>2024-07-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/iperf/</loc>
+    <loc>https://langhaidian.github.io//tags/iperf/</loc>
     <lastmod>2024-07-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/linux/iperf%E6%B5%8B%E8%AF%95%E5%B8%A6%E5%AE%BD/</loc>
+    <loc>https://langhaidian.github.io//posts/linux/iperf%E6%B5%8B%E8%AF%95%E5%B8%A6%E5%AE%BD/</loc>
     <lastmod>2024-07-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/network/</loc>
+    <loc>https://langhaidian.github.io//categories/network/</loc>
     <lastmod>2024-07-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/raft/</loc>
+    <loc>https://langhaidian.github.io//tags/raft/</loc>
     <lastmod>2024-07-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/raft/</loc>
+    <loc>https://langhaidian.github.io//categories/raft/</loc>
     <lastmod>2024-07-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/linux/raft-zh_cn/</loc>
+    <loc>https://langhaidian.github.io//posts/linux/raft-zh_cn/</loc>
     <lastmod>2024-07-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/centos/</loc>
+    <loc>https://langhaidian.github.io//tags/centos/</loc>
     <lastmod>2024-06-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/linux/cnetos7%E5%B0%8F%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85docker/</loc>
+    <loc>https://langhaidian.github.io//posts/linux/cnetos7%E5%B0%8F%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85docker/</loc>
     <lastmod>2024-06-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/debian-11/</loc>
+    <loc>https://langhaidian.github.io//tags/debian-11/</loc>
     <lastmod>2024-06-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/linux/debian11/</loc>
+    <loc>https://langhaidian.github.io//posts/linux/debian11/</loc>
     <lastmod>2024-06-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/linux/cnetos7%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/</loc>
+    <loc>https://langhaidian.github.io//posts/linux/cnetos7%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/</loc>
     <lastmod>2024-05-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/containerd/</loc>
+    <loc>https://langhaidian.github.io//tags/containerd/</loc>
     <lastmod>2024-05-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/linux/containerd%E5%AE%89%E8%A3%85/</loc>
+    <loc>https://langhaidian.github.io//posts/linux/containerd%E5%AE%89%E8%A3%85/</loc>
     <lastmod>2024-05-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/blog/</loc>
+    <loc>https://langhaidian.github.io//categories/blog/</loc>
     <lastmod>2024-03-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/other/%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%90%AF%E8%AF%84%E8%AE%BA%E6%A8%A1%E5%9D%97/</loc>
+    <loc>https://langhaidian.github.io//posts/other/%E5%8D%9A%E5%AE%A2%E5%BC%80%E5%90%AF%E8%AF%84%E8%AE%BA%E6%A8%A1%E5%9D%97/</loc>
     <lastmod>2024-03-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/tomcat/</loc>
+    <loc>https://langhaidian.github.io//tags/tomcat/</loc>
     <lastmod>2024-03-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/tomcat/</loc>
+    <loc>https://langhaidian.github.io//categories/tomcat/</loc>
     <lastmod>2024-03-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/linux/tomcat%E8%AE%BE%E7%BD%AE%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</loc>
+    <loc>https://langhaidian.github.io//posts/linux/tomcat%E8%AE%BE%E7%BD%AE%E7%B3%BB%E7%BB%9F%E6%9C%8D%E5%8A%A1/</loc>
     <lastmod>2024-03-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/%E5%85%B6%E4%BB%96/</loc>
+    <loc>https://langhaidian.github.io//categories/%E5%85%B6%E4%BB%96/</loc>
     <lastmod>2024-03-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/other/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%BA%A7%E6%95%85%E9%9A%9C%E6%80%BB%E7%BB%93/</loc>
+    <loc>https://langhaidian.github.io//posts/other/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%BA%A7%E6%95%85%E9%9A%9C%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2024-03-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/linux/debian%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/</loc>
+    <loc>https://langhaidian.github.io//posts/linux/debian%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/</loc>
     <lastmod>2024-02-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/docker/</loc>
+    <loc>https://langhaidian.github.io//tags/docker/</loc>
     <lastmod>2024-02-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/docker/</loc>
+    <loc>https://langhaidian.github.io//categories/docker/</loc>
     <lastmod>2024-02-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/docker/docker_start/</loc>
+    <loc>https://langhaidian.github.io//posts/docker/docker_start/</loc>
     <lastmod>2024-02-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/docker/dockerfile%E7%BC%96%E5%86%99/</loc>
+    <loc>https://langhaidian.github.io//posts/docker/dockerfile%E7%BC%96%E5%86%99/</loc>
     <lastmod>2024-02-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/postgresql/</loc>
+    <loc>https://langhaidian.github.io//categories/postgresql/</loc>
     <lastmod>2024-02-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/postgres/postgers%E5%A4%87%E4%BB%BD%E5%9B%9E%E5%A4%8D/</loc>
+    <loc>https://langhaidian.github.io//posts/postgres/postgers%E5%A4%87%E4%BB%BD%E5%9B%9E%E5%A4%8D/</loc>
     <lastmod>2024-02-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/python/</loc>
+    <loc>https://langhaidian.github.io//categories/python/</loc>
     <lastmod>2024-02-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/python/virtualenv%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8/</loc>
+    <loc>https://langhaidian.github.io//posts/python/virtualenv%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2024-02-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/other/%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9%E6%9C%AC%E5%9C%B0%E6%8E%A8%E9%80%81%E8%87%B3github/</loc>
+    <loc>https://langhaidian.github.io//posts/other/%E5%8D%9A%E5%AE%A2%E5%86%85%E5%AE%B9%E6%9C%AC%E5%9C%B0%E6%8E%A8%E9%80%81%E8%87%B3github/</loc>
     <lastmod>2024-02-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/sed/</loc>
+    <loc>https://langhaidian.github.io//tags/sed/</loc>
     <lastmod>2023-09-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/linux/sed/</loc>
+    <loc>https://langhaidian.github.io//posts/linux/sed/</loc>
     <lastmod>2023-09-10T11:04:49+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/about/</loc>
+    <loc>https://langhaidian.github.io//about/</loc>
   </url><url>
-    <loc>https://examplesite.com/archives/</loc>
+    <loc>https://langhaidian.github.io//archives/</loc>
   </url><url>
-    <loc>https://examplesite.com/about/abouts/</loc>
+    <loc>https://langhaidian.github.io//about/abouts/</loc>
   </url>
 </urlset>

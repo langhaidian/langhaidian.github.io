@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Python on langhaidian</title>
-    <link>https://examplesite.com/categories/python/</link>
+    <link>https://langhaidian.github.io//categories/python/</link>
     <description>Recent content in Python on langhaidian</description>
     <image>
       <title>langhaidian</title>
-      <url>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://langhaidian.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://langhaidian.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 10 Feb 2024 11:04:49 +0800</lastBuildDate>
-    <atom:link href="https://examplesite.com/categories/python/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://langhaidian.github.io//categories/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>virtualenv虚拟环境使用</title>
-      <link>https://examplesite.com/posts/python/virtualenv%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8/</link>
+      <link>https://langhaidian.github.io//posts/python/virtualenv%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8/</link>
       <pubDate>Sat, 10 Feb 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/posts/python/virtualenv%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8/</guid>
+      <guid>https://langhaidian.github.io//posts/python/virtualenv%E8%99%9A%E6%8B%9F%E7%8E%AF%E5%A2%83%E4%BD%BF%E7%94%A8/</guid>
       <description>Desc Text.</description>
     </item>
   </channel>

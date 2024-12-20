@@ -2,71 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Linux on langhaidian</title>
-    <link>https://examplesite.com/categories/linux/</link>
+    <link>https://langhaidian.github.io//categories/linux/</link>
     <description>Recent content in Linux on langhaidian</description>
     <image>
       <title>langhaidian</title>
-      <url>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://langhaidian.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://langhaidian.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 10 Aug 2024 11:04:49 +0800</lastBuildDate>
-    <atom:link href="https://examplesite.com/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://langhaidian.github.io//categories/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>linux设置时间</title>
-      <link>https://examplesite.com/posts/linux/linux%E8%AE%BE%E7%BD%AE%E6%97%B6%E9%97%B4/</link>
+      <link>https://langhaidian.github.io//posts/linux/linux%E8%AE%BE%E7%BD%AE%E6%97%B6%E9%97%B4/</link>
       <pubDate>Sat, 10 Aug 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/posts/linux/linux%E8%AE%BE%E7%BD%AE%E6%97%B6%E9%97%B4/</guid>
+      <guid>https://langhaidian.github.io//posts/linux/linux%E8%AE%BE%E7%BD%AE%E6%97%B6%E9%97%B4/</guid>
       <description>Desc Text.</description>
     </item>
     <item>
       <title>geoscen server基础部署-centos 7.6</title>
-      <link>https://examplesite.com/posts/linux/geoscenserver2.0%E5%9F%BA%E7%A1%80%E9%83%A8%E7%BD%B2/</link>
+      <link>https://langhaidian.github.io//posts/linux/geoscenserver2.0%E5%9F%BA%E7%A1%80%E9%83%A8%E7%BD%B2/</link>
       <pubDate>Wed, 10 Jul 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/posts/linux/geoscenserver2.0%E5%9F%BA%E7%A1%80%E9%83%A8%E7%BD%B2/</guid>
+      <guid>https://langhaidian.github.io//posts/linux/geoscenserver2.0%E5%9F%BA%E7%A1%80%E9%83%A8%E7%BD%B2/</guid>
       <description>Desc Text.</description>
     </item>
     <item>
       <title>centos7离线安装docker</title>
-      <link>https://examplesite.com/posts/linux/cnetos7%E5%B0%8F%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85docker/</link>
+      <link>https://langhaidian.github.io//posts/linux/cnetos7%E5%B0%8F%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85docker/</link>
       <pubDate>Mon, 10 Jun 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/posts/linux/cnetos7%E5%B0%8F%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85docker/</guid>
+      <guid>https://langhaidian.github.io//posts/linux/cnetos7%E5%B0%8F%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85docker/</guid>
       <description>Desc Text.</description>
     </item>
     <item>
       <title>debian 11基础环境准备</title>
-      <link>https://examplesite.com/posts/linux/debian11/</link>
+      <link>https://langhaidian.github.io//posts/linux/debian11/</link>
       <pubDate>Mon, 10 Jun 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/posts/linux/debian11/</guid>
+      <guid>https://langhaidian.github.io//posts/linux/debian11/</guid>
       <description>Desc Text.</description>
     </item>
     <item>
       <title>centos7内核4.19升级到5.14</title>
-      <link>https://examplesite.com/posts/linux/cnetos7%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/</link>
+      <link>https://langhaidian.github.io//posts/linux/cnetos7%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/</link>
       <pubDate>Fri, 10 May 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/posts/linux/cnetos7%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/</guid>
+      <guid>https://langhaidian.github.io//posts/linux/cnetos7%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/</guid>
       <description>Desc Text.</description>
     </item>
     <item>
       <title>containerd安装</title>
-      <link>https://examplesite.com/posts/linux/containerd%E5%AE%89%E8%A3%85/</link>
+      <link>https://langhaidian.github.io//posts/linux/containerd%E5%AE%89%E8%A3%85/</link>
       <pubDate>Fri, 10 May 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/posts/linux/containerd%E5%AE%89%E8%A3%85/</guid>
+      <guid>https://langhaidian.github.io//posts/linux/containerd%E5%AE%89%E8%A3%85/</guid>
       <description>Desc Text.</description>
     </item>
     <item>
       <title>debian升级内核</title>
-      <link>https://examplesite.com/posts/linux/debian%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/</link>
+      <link>https://langhaidian.github.io//posts/linux/debian%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/</link>
       <pubDate>Sat, 10 Feb 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/posts/linux/debian%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/</guid>
+      <guid>https://langhaidian.github.io//posts/linux/debian%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/</guid>
       <description>Desc Text.</description>
     </item>
     <item>
       <title>sed简单介绍</title>
-      <link>https://examplesite.com/posts/linux/sed/</link>
+      <link>https://langhaidian.github.io//posts/linux/sed/</link>
       <pubDate>Sun, 10 Sep 2023 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/posts/linux/sed/</guid>
+      <guid>https://langhaidian.github.io//posts/linux/sed/</guid>
       <description>Desc Text.</description>
     </item>
   </channel>

@@ -2,92 +2,92 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on langhaidian</title>
-    <link>https://examplesite.com/categories/</link>
+    <link>https://langhaidian.github.io//categories/</link>
     <description>Recent content in Categories on langhaidian</description>
     <image>
       <title>langhaidian</title>
-      <url>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://langhaidian.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://langhaidian.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 10 Aug 2024 11:04:49 +0800</lastBuildDate>
-    <atom:link href="https://examplesite.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://langhaidian.github.io//categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Linux</title>
-      <link>https://examplesite.com/categories/linux/</link>
+      <link>https://langhaidian.github.io//categories/linux/</link>
       <pubDate>Sat, 10 Aug 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/categories/linux/</guid>
+      <guid>https://langhaidian.github.io//categories/linux/</guid>
       <description></description>
     </item>
     <item>
       <title>Running</title>
-      <link>https://examplesite.com/categories/running/</link>
+      <link>https://langhaidian.github.io//categories/running/</link>
       <pubDate>Sat, 10 Aug 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/categories/running/</guid>
+      <guid>https://langhaidian.github.io//categories/running/</guid>
       <description></description>
     </item>
     <item>
       <title>证书</title>
-      <link>https://examplesite.com/categories/%E8%AF%81%E4%B9%A6/</link>
+      <link>https://langhaidian.github.io//categories/%E8%AF%81%E4%B9%A6/</link>
       <pubDate>Sat, 10 Aug 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/categories/%E8%AF%81%E4%B9%A6/</guid>
+      <guid>https://langhaidian.github.io//categories/%E8%AF%81%E4%B9%A6/</guid>
       <description></description>
     </item>
     <item>
       <title>Network</title>
-      <link>https://examplesite.com/categories/network/</link>
+      <link>https://langhaidian.github.io//categories/network/</link>
       <pubDate>Wed, 10 Jul 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/categories/network/</guid>
+      <guid>https://langhaidian.github.io//categories/network/</guid>
       <description></description>
     </item>
     <item>
       <title>Raft</title>
-      <link>https://examplesite.com/categories/raft/</link>
+      <link>https://langhaidian.github.io//categories/raft/</link>
       <pubDate>Wed, 10 Jul 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/categories/raft/</guid>
+      <guid>https://langhaidian.github.io//categories/raft/</guid>
       <description></description>
     </item>
     <item>
       <title>Blog</title>
-      <link>https://examplesite.com/categories/blog/</link>
+      <link>https://langhaidian.github.io//categories/blog/</link>
       <pubDate>Sun, 10 Mar 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/categories/blog/</guid>
+      <guid>https://langhaidian.github.io//categories/blog/</guid>
       <description></description>
     </item>
     <item>
       <title>Tomcat</title>
-      <link>https://examplesite.com/categories/tomcat/</link>
+      <link>https://langhaidian.github.io//categories/tomcat/</link>
       <pubDate>Sun, 10 Mar 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/categories/tomcat/</guid>
+      <guid>https://langhaidian.github.io//categories/tomcat/</guid>
       <description></description>
     </item>
     <item>
       <title>其他</title>
-      <link>https://examplesite.com/categories/%E5%85%B6%E4%BB%96/</link>
+      <link>https://langhaidian.github.io//categories/%E5%85%B6%E4%BB%96/</link>
       <pubDate>Sun, 10 Mar 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/categories/%E5%85%B6%E4%BB%96/</guid>
+      <guid>https://langhaidian.github.io//categories/%E5%85%B6%E4%BB%96/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
-      <link>https://examplesite.com/categories/docker/</link>
+      <link>https://langhaidian.github.io//categories/docker/</link>
       <pubDate>Sat, 10 Feb 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/categories/docker/</guid>
+      <guid>https://langhaidian.github.io//categories/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>Postgresql</title>
-      <link>https://examplesite.com/categories/postgresql/</link>
+      <link>https://langhaidian.github.io//categories/postgresql/</link>
       <pubDate>Sat, 10 Feb 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/categories/postgresql/</guid>
+      <guid>https://langhaidian.github.io//categories/postgresql/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>https://examplesite.com/categories/python/</link>
+      <link>https://langhaidian.github.io//categories/python/</link>
       <pubDate>Sat, 10 Feb 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/categories/python/</guid>
+      <guid>https://langhaidian.github.io//categories/python/</guid>
       <description></description>
     </item>
   </channel>

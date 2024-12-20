@@ -41,12 +41,15 @@ params:
   showtoc: false
   tocopen: false
 
+  waline:
+    serverURL:  "https://waline-langhaidian-hdpdnl62x-langhaidians-projects.vercel.app"
+
   assets:
     # disableHLJS: true # to disable highlight.js
     # disableFingerprinting: true
     favicon: "<link / abs url>"
     favicon16x16: "<link / abs url>"
-    favicon32x32: "<link / abs url>"
+    favicon32x32: "https://avatars.githubusercontent.com/u/539272"
     apple_touch_icon: "<link / abs url>"
     safari_pinned_tab: "<link / abs url>"
 
@@ -138,3 +141,4 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
+  

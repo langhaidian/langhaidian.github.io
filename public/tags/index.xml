@@ -2,99 +2,99 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on langhaidian</title>
-    <link>https://examplesite.com/tags/</link>
+    <link>https://langhaidian.github.io//tags/</link>
     <description>Recent content in Tags on langhaidian</description>
     <image>
       <title>langhaidian</title>
-      <url>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://langhaidian.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://langhaidian.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 10 Aug 2024 11:04:49 +0800</lastBuildDate>
-    <atom:link href="https://examplesite.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://langhaidian.github.io//tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>“Date&#34;</title>
-      <link>https://examplesite.com/tags/date/</link>
+      <link>https://langhaidian.github.io//tags/date/</link>
       <pubDate>Sat, 10 Aug 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/tags/date/</guid>
+      <guid>https://langhaidian.github.io//tags/date/</guid>
       <description></description>
     </item>
     <item>
       <title>Mkcert</title>
-      <link>https://examplesite.com/tags/mkcert/</link>
+      <link>https://langhaidian.github.io//tags/mkcert/</link>
       <pubDate>Sat, 10 Aug 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/tags/mkcert/</guid>
+      <guid>https://langhaidian.github.io//tags/mkcert/</guid>
       <description></description>
     </item>
     <item>
       <title>Virtualenv Python</title>
-      <link>https://examplesite.com/tags/virtualenv-python/</link>
+      <link>https://langhaidian.github.io//tags/virtualenv-python/</link>
       <pubDate>Sat, 10 Aug 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/tags/virtualenv-python/</guid>
+      <guid>https://langhaidian.github.io//tags/virtualenv-python/</guid>
       <description></description>
     </item>
     <item>
       <title>Geoscene</title>
-      <link>https://examplesite.com/tags/geoscene/</link>
+      <link>https://langhaidian.github.io//tags/geoscene/</link>
       <pubDate>Wed, 10 Jul 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/tags/geoscene/</guid>
+      <guid>https://langhaidian.github.io//tags/geoscene/</guid>
       <description></description>
     </item>
     <item>
       <title>Iperf</title>
-      <link>https://examplesite.com/tags/iperf/</link>
+      <link>https://langhaidian.github.io//tags/iperf/</link>
       <pubDate>Wed, 10 Jul 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/tags/iperf/</guid>
+      <guid>https://langhaidian.github.io//tags/iperf/</guid>
       <description></description>
     </item>
     <item>
       <title>Raft</title>
-      <link>https://examplesite.com/tags/raft/</link>
+      <link>https://langhaidian.github.io//tags/raft/</link>
       <pubDate>Wed, 10 Jul 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/tags/raft/</guid>
+      <guid>https://langhaidian.github.io//tags/raft/</guid>
       <description></description>
     </item>
     <item>
       <title>Centos</title>
-      <link>https://examplesite.com/tags/centos/</link>
+      <link>https://langhaidian.github.io//tags/centos/</link>
       <pubDate>Mon, 10 Jun 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/tags/centos/</guid>
+      <guid>https://langhaidian.github.io//tags/centos/</guid>
       <description></description>
     </item>
     <item>
       <title>Debian 11</title>
-      <link>https://examplesite.com/tags/debian-11/</link>
+      <link>https://langhaidian.github.io//tags/debian-11/</link>
       <pubDate>Mon, 10 Jun 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/tags/debian-11/</guid>
+      <guid>https://langhaidian.github.io//tags/debian-11/</guid>
       <description></description>
     </item>
     <item>
       <title>Containerd</title>
-      <link>https://examplesite.com/tags/containerd/</link>
+      <link>https://langhaidian.github.io//tags/containerd/</link>
       <pubDate>Fri, 10 May 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/tags/containerd/</guid>
+      <guid>https://langhaidian.github.io//tags/containerd/</guid>
       <description></description>
     </item>
     <item>
       <title>Tomcat</title>
-      <link>https://examplesite.com/tags/tomcat/</link>
+      <link>https://langhaidian.github.io//tags/tomcat/</link>
       <pubDate>Sun, 10 Mar 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/tags/tomcat/</guid>
+      <guid>https://langhaidian.github.io//tags/tomcat/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
-      <link>https://examplesite.com/tags/docker/</link>
+      <link>https://langhaidian.github.io//tags/docker/</link>
       <pubDate>Sat, 10 Feb 2024 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/tags/docker/</guid>
+      <guid>https://langhaidian.github.io//tags/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>Sed</title>
-      <link>https://examplesite.com/tags/sed/</link>
+      <link>https://langhaidian.github.io//tags/sed/</link>
       <pubDate>Sun, 10 Sep 2023 11:04:49 +0800</pubDate>
-      <guid>https://examplesite.com/tags/sed/</guid>
+      <guid>https://langhaidian.github.io//tags/sed/</guid>
       <description></description>
     </item>
   </channel>

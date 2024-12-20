@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Debian 11 on langhaidian</title>
-    <link>https://langhaidian.github.io//tags/debian-11/</link>
+    <link>http://localhost:1313//tags/debian-11/</link>
     <description>Recent content in Debian 11 on langhaidian</description>
     <image>
       <title>langhaidian</title>
-      <url>https://langhaidian.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://langhaidian.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Mon, 10 Jun 2024 11:04:49 +0800</lastBuildDate>
-    <atom:link href="https://langhaidian.github.io//tags/debian-11/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313//tags/debian-11/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>debian 11基础环境准备</title>
-      <link>https://langhaidian.github.io//posts/linux/debian11/</link>
+      <link>http://localhost:1313//posts/linux/debian11/</link>
       <pubDate>Mon, 10 Jun 2024 11:04:49 +0800</pubDate>
-      <guid>https://langhaidian.github.io//posts/linux/debian11/</guid>
+      <guid>http://localhost:1313//posts/linux/debian11/</guid>
       <description>Desc Text.</description>
     </item>
     <item>
       <title>debian升级内核</title>
-      <link>https://langhaidian.github.io//posts/linux/debian%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/</link>
+      <link>http://localhost:1313//posts/linux/debian%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/</link>
       <pubDate>Sat, 10 Feb 2024 11:04:49 +0800</pubDate>
-      <guid>https://langhaidian.github.io//posts/linux/debian%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/</guid>
+      <guid>http://localhost:1313//posts/linux/debian%E5%8D%87%E7%BA%A7%E5%86%85%E6%A0%B8/</guid>
       <description>Desc Text.</description>
     </item>
   </channel>

@@ -2,99 +2,99 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on langhaidian</title>
-    <link>https://langhaidian.github.io//tags/</link>
+    <link>http://localhost:1313//tags/</link>
     <description>Recent content in Tags on langhaidian</description>
     <image>
       <title>langhaidian</title>
-      <url>https://langhaidian.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://langhaidian.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 10 Aug 2024 11:04:49 +0800</lastBuildDate>
-    <atom:link href="https://langhaidian.github.io//tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313//tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>“Date&#34;</title>
-      <link>https://langhaidian.github.io//tags/date/</link>
+      <link>http://localhost:1313//tags/date/</link>
       <pubDate>Sat, 10 Aug 2024 11:04:49 +0800</pubDate>
-      <guid>https://langhaidian.github.io//tags/date/</guid>
+      <guid>http://localhost:1313//tags/date/</guid>
       <description></description>
     </item>
     <item>
       <title>Mkcert</title>
-      <link>https://langhaidian.github.io//tags/mkcert/</link>
+      <link>http://localhost:1313//tags/mkcert/</link>
       <pubDate>Sat, 10 Aug 2024 11:04:49 +0800</pubDate>
-      <guid>https://langhaidian.github.io//tags/mkcert/</guid>
+      <guid>http://localhost:1313//tags/mkcert/</guid>
       <description></description>
     </item>
     <item>
       <title>Virtualenv Python</title>
-      <link>https://langhaidian.github.io//tags/virtualenv-python/</link>
+      <link>http://localhost:1313//tags/virtualenv-python/</link>
       <pubDate>Sat, 10 Aug 2024 11:04:49 +0800</pubDate>
-      <guid>https://langhaidian.github.io//tags/virtualenv-python/</guid>
+      <guid>http://localhost:1313//tags/virtualenv-python/</guid>
       <description></description>
     </item>
     <item>
       <title>Geoscene</title>
-      <link>https://langhaidian.github.io//tags/geoscene/</link>
+      <link>http://localhost:1313//tags/geoscene/</link>
       <pubDate>Wed, 10 Jul 2024 11:04:49 +0800</pubDate>
-      <guid>https://langhaidian.github.io//tags/geoscene/</guid>
+      <guid>http://localhost:1313//tags/geoscene/</guid>
       <description></description>
     </item>
     <item>
       <title>Iperf</title>
-      <link>https://langhaidian.github.io//tags/iperf/</link>
+      <link>http://localhost:1313//tags/iperf/</link>
       <pubDate>Wed, 10 Jul 2024 11:04:49 +0800</pubDate>
-      <guid>https://langhaidian.github.io//tags/iperf/</guid>
+      <guid>http://localhost:1313//tags/iperf/</guid>
       <description></description>
     </item>
     <item>
       <title>Raft</title>
-      <link>https://langhaidian.github.io//tags/raft/</link>
+      <link>http://localhost:1313//tags/raft/</link>
       <pubDate>Wed, 10 Jul 2024 11:04:49 +0800</pubDate>
-      <guid>https://langhaidian.github.io//tags/raft/</guid>
+      <guid>http://localhost:1313//tags/raft/</guid>
       <description></description>
     </item>
     <item>
       <title>Centos</title>
-      <link>https://langhaidian.github.io//tags/centos/</link>
+      <link>http://localhost:1313//tags/centos/</link>
       <pubDate>Mon, 10 Jun 2024 11:04:49 +0800</pubDate>
-      <guid>https://langhaidian.github.io//tags/centos/</guid>
+      <guid>http://localhost:1313//tags/centos/</guid>
       <description></description>
     </item>
     <item>
       <title>Debian 11</title>
-      <link>https://langhaidian.github.io//tags/debian-11/</link>
+      <link>http://localhost:1313//tags/debian-11/</link>
       <pubDate>Mon, 10 Jun 2024 11:04:49 +0800</pubDate>
-      <guid>https://langhaidian.github.io//tags/debian-11/</guid>
+      <guid>http://localhost:1313//tags/debian-11/</guid>
       <description></description>
     </item>
     <item>
       <title>Containerd</title>
-      <link>https://langhaidian.github.io//tags/containerd/</link>
+      <link>http://localhost:1313//tags/containerd/</link>
       <pubDate>Fri, 10 May 2024 11:04:49 +0800</pubDate>
-      <guid>https://langhaidian.github.io//tags/containerd/</guid>
+      <guid>http://localhost:1313//tags/containerd/</guid>
       <description></description>
     </item>
     <item>
       <title>Tomcat</title>
-      <link>https://langhaidian.github.io//tags/tomcat/</link>
+      <link>http://localhost:1313//tags/tomcat/</link>
       <pubDate>Sun, 10 Mar 2024 11:04:49 +0800</pubDate>
-      <guid>https://langhaidian.github.io//tags/tomcat/</guid>
+      <guid>http://localhost:1313//tags/tomcat/</guid>
       <description></description>
     </item>
     <item>
       <title>Docker</title>
-      <link>https://langhaidian.github.io//tags/docker/</link>
+      <link>http://localhost:1313//tags/docker/</link>
       <pubDate>Sat, 10 Feb 2024 11:04:49 +0800</pubDate>
-      <guid>https://langhaidian.github.io//tags/docker/</guid>
+      <guid>http://localhost:1313//tags/docker/</guid>
       <description></description>
     </item>
     <item>
       <title>Sed</title>
-      <link>https://langhaidian.github.io//tags/sed/</link>
+      <link>http://localhost:1313//tags/sed/</link>
       <pubDate>Sun, 10 Sep 2023 11:04:49 +0800</pubDate>
-      <guid>https://langhaidian.github.io//tags/sed/</guid>
+      <guid>http://localhost:1313//tags/sed/</guid>
       <description></description>
     </item>
   </channel>

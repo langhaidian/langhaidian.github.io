@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>证书 on langhaidian</title>
-    <link>https://langhaidian.github.io//categories/%E8%AF%81%E4%B9%A6/</link>
+    <link>http://localhost:1313//categories/%E8%AF%81%E4%B9%A6/</link>
     <description>Recent content in 证书 on langhaidian</description>
     <image>
       <title>langhaidian</title>
-      <url>https://langhaidian.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://langhaidian.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.140.0</generator>
     <language>en</language>
     <lastBuildDate>Sat, 10 Aug 2024 11:04:49 +0800</lastBuildDate>
-    <atom:link href="https://langhaidian.github.io//categories/%E8%AF%81%E4%B9%A6/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313//categories/%E8%AF%81%E4%B9%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>mkcert生成GeosceneServer证书</title>
-      <link>https://langhaidian.github.io//posts/linux/mkcert%E7%94%9F%E6%88%90geosceneserver%E8%AF%81%E4%B9%A6/</link>
+      <link>http://localhost:1313//posts/linux/mkcert%E7%94%9F%E6%88%90geosceneserver%E8%AF%81%E4%B9%A6/</link>
       <pubDate>Sat, 10 Aug 2024 11:04:49 +0800</pubDate>
-      <guid>https://langhaidian.github.io//posts/linux/mkcert%E7%94%9F%E6%88%90geosceneserver%E8%AF%81%E4%B9%A6/</guid>
+      <guid>http://localhost:1313//posts/linux/mkcert%E7%94%9F%E6%88%90geosceneserver%E8%AF%81%E4%B9%A6/</guid>
       <description>Desc Text.</description>
     </item>
   </channel>

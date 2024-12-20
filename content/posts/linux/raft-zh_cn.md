@@ -1,6 +1,6 @@
 ---
 title: "raft算法中文讲解"
-date: 2022-02-10T11:04:49+08:00 
+date: 2024-07-10T11:04:49+08:00 
 # weight: 1
 # aliases: ["/first"]
 tags: ["raft"]

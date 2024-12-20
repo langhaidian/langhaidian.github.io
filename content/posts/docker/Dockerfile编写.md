@@ -1,6 +1,6 @@
 ---
 title: "Dockerfile文件编写"
-date: 2022-02-10T11:04:49+08:00
+date: 2024-02-10T11:04:49+08:00
 # weight: 1
 # aliases: ["/first"]
 tags: ["docker"]

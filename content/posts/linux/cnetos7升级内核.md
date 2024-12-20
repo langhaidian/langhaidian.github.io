@@ -1,6 +1,6 @@
 ---
 title: "centos7内核4.19升级到5.14"
-date: 2022-02-10T11:04:49+08:00 
+date: 2024-05-10T11:04:49+08:00 
 # weight: 1
 # aliases: ["/first"]
 tags: ["centos"]
